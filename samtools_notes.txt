@@ -39,6 +39,15 @@ samtools mpileup -g -f sal_ref_sej.fasta sal_sej_sorted.bam.bam > sal_vars.bcf
 # -f : use reference genome given
 
 
+### calling snp and indels
+bcftools view -c -v sal_vars.bcf > sal_vars.vcf
+# -c : find snp
+# -v : output only potential variants
+### note: new command is "call". type "bcftools" to see current version and commands
 
+### show alignment
+samtools tview sal_sej_sorted.bam.bam sal_ref_sej.fasta
+# first arg is sorted bam file
+# second arg is reference 
 
 
