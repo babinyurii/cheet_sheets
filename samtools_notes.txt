@@ -50,4 +50,9 @@ samtools tview sal_sej_sorted.bam.bam sal_ref_sej.fasta
 # first arg is sorted bam file
 # second arg is reference 
 
+### calculate depth at each position
+samtools depth /path/to/sorted_bam.bam
+### note: returns count of depth at each position. input should be sorted
+
+
 
