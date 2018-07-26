@@ -52,6 +52,8 @@ samtools tview sal_sej_sorted.bam.bam sal_ref_sej.fasta
 
 ### calculate depth at each position
 samtools depth /path/to/sorted_bam.bam
+### results into txt file
+samtools depth /path/to/sorted_bam.bam > /path/to/coverage_results.txt
 ### note: returns count of depth at each position. input should be sorted
 
 
