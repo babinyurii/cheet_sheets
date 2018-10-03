@@ -1,1 +1,1 @@
-pandas, matplotlib, plotly and samtools notes
+pandas, matplotlib, plotly notes
